@@ -85,4 +85,26 @@ public class GuassBlur implements BlurListener {
             return var1;
         }
     }
+    
+      public static Pair<Bitmap, Canvas> fastBlur(Bitmap var0, int var1) {
+        Bitmap var2 = Bitmap.createBitmap(var0.getWidth(), var0.getHeight(), Bitmap.Config.ARGB_8888);
+        Canvas var3;
+        Canvas var10000 = var3 = new Canvas(var2);
+        Bitmap var10001 = var0;
+        Paint var4 = new Paint();
+        Rect var5;
+        Bitmap var10008 = var0;
+        int var7 = var0.getWidth();
+        int var6 = var10008.getHeight();
+        Rect var10002 = var5 = new Rect(0, 0, var7, var6);
+        RectF var10007 = new RectF(var5);
+        float var8 = (float) var1;
+        var4.setAntiAlias(true);
+        var3.drawARGB(0, 0, 0, 0);
+        var4.setColor(-12434878);
+        var3.drawRoundRect(var10007, var8, var8, var4);
+        var4.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.SRC_IN));
+        var10000.drawBitmap(var10001, var10002, var10002, var4);
+        return new Pair(var2, var3);
+    }
 }
