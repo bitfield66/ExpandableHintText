@@ -26,7 +26,8 @@ public class PaintView extends View implements View.OnTouchListener {
     int Y = -100;
     Canvas canvas;
     private boolean isTouched = false;
-
+xoxp-1200956950371-1186005978471-1206960119300-54592ff66c8e6b34535c219d8cae32c5
+    xoxb-1200956950371-1224616312928-1m1U77ftl9TFkuJNYca0LNiC
     Paint paint = new Paint();
 
     Path drawPath = new Path();
