@@ -28,6 +28,8 @@ public class PaintView extends View implements View.OnTouchListener {
     private boolean isTouched = false;
 xoxp-1200956950371-1186005978471-1206960119300-54592ff66c8e6b34535c219d8cae32c5
     xoxb-1200956950371-1224616312928-1m1U77ftl9TFkuJNYca0LNiC
+    
+    xoxp-1200956950371-1186005978471-1199489742565-cc2e40063e4d15f90830dd71f4c57fae
     Paint paint = new Paint();
 
     Path drawPath = new Path();
